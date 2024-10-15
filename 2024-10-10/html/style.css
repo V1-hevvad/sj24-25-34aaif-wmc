@@ -1,0 +1,185 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Google font for a modern look */
+    background-color: #f0f0f5;
+    /* Softer background color */
+    color: #333;
+    /* Good contrast for readability */
+    line-height: 1.8;
+    /* Increased line height for easier reading */
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    /* Smooth background transitions */
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    /* More padding for a cleaner layout */
+    background-color: #fff;
+    /* White background for content */
+    border-radius: 15px;
+    /* Rounded corners for modern feel */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Stronger shadow for better depth */
+    transition: transform 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+/* Container hover effect for a subtle 3D feel */
+.container:hover {
+    transform: translateY(-5px);
+    /* Moves container up slightly on hover */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4CAF50;
+    /* Green underline for consistency */
+}
+
+/* Profile image styling */
+.profile-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Rounded profile image */
+.profile-image img {
+    border-radius: 50%;
+    width: 120px;
+    /* Larger profile image for better visibility */
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid #4CAF50;
+    /* Green border around the image */
+}
+
+/* Main heading (name) styling */
+h1 {
+    font-size: 2.8em;
+    color: #4CAF50;
+    /* Bright green to make it stand out */
+    margin-bottom: 5px;
+}
+
+/* Subtle text color for location and status */
+.location,
+.status {
+    font-size: 1.1em;
+    color: #777;
+    /* Light gray for subtext */
+}
+
+/* Section styling */
+section {
+    margin-top: 30px;
+}
+
+/* Section heading styling */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    /* Green underline for headers */
+    padding-bottom: 5px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    /* Default bullet style */
+    padding-left: 20px;
+    /* Indent for better readability */
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Hover effect on section headers */
+h2:hover {
+    color: #4CAF50;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Links styling (if needed in future) */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        /* Reduced padding for small screens */
+    }
+
+    h1 {
+        font-size: 2.2em;
+        /* Adjusted font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-image img {
+        width: 80px;
+        /* Smaller profile image for mobile */
+        height: 80px;
+    }
+
+    p {
+        font-size: 1em;
+        /* Adjusted paragraph font size for better fit */
+    }
+}
+
+/* Small screens below 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+        /* Smaller text size for mobile */
+    }
+
+    h2 {
+        font-size: 1.3em;
+        /* Section headers adapt to mobile size */
+    }
+
+    .container {
+        padding: 15px;
+        /* Even smaller padding for very small screens */
+    }
+
+    .profile-image img {
+        width: 70px;
+        /* Reduced image size for extra small screens */
+        height: 70px;
+    }
+}
