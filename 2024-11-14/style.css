@@ -1,0 +1,151 @@
+/* General Styles */
+:root {
+    --color-primary: #00ad6a;
+    --color-white: #ffffff;
+    --color-dark: #080c16;
+    --color-light: #d6dae5;
+    --color-background: #eafaf0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* First Card - Background color of the body */
+.first-card {
+    background-color: var(--color-background);
+    padding: 25px 20px;
+}
+
+/* Recommended Card (Middle) - Taller and Highlighted */
+.recommended-card {
+    background-color: var(--color-white);
+    /* Keep white background */
+    color: var(--color-dark);
+    padding: 40px 20px;
+    /* Increased padding for more height */
+    border: 2px solid #f0f0f0;
+    /* Light border */
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow for highlight effect */
+    height: 520px;
+    /* Set a taller height to make it stand out */
+    position: relative;
+    /* To position the badge properly */
+}
+
+.recommended-card h3 {
+    font-size: 26px;
+    /* Slightly bigger font for the heading */
+    margin-bottom: 20px;
+    /* More space below the heading */
+}
+
+.recommended-card p {
+    font-size: 32px;
+    /* Larger price font size */
+    font-weight: bold;
+    color: var(--color-dark);
+}
+
+.recommended-card ul {
+    font-size: 16px;
+}
+
+.recommended-card ul li {
+    margin-bottom: 10px;
+}
+
+.recommended-card button {
+    font-size: 20px;
+    padding: 14px;
+    /* Increased padding for better button size */
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.recommended-card .badge {
+    font-size: 16px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    /* Positioning it lower */
+    left: 20px;
+    /* Keep it on the left side */
+}
+
+/* Third Card */
+.white-card {
+    background-color: var(--color-white);
+    padding: 25px 20px;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    background-color: #212529;
+    color: var(--color-white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ Section */
+.faq h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.accordion-button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.accordion-body {
+    font-size: 16px;
+    padding: 15px;
+}
